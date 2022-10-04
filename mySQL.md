@@ -20,10 +20,14 @@ ________________________________________________________________________________
 `1. docker pull phpmyadmin`
 
 `2. docker run --name  -d -e PMA_ARBITRARY=1 -p 8085:80 phpmyadmin` // Hierbei muss der Port ein nicht verwendeter Port sein.
+- `-d` steht für das image auf dem Container, der im hintergrund agiert.
+- `-e` ist sowie execute (Ausführen)?????????
+- `-p` sagt den Port aus.
 _________________________________________________________________________________________________________________________________
 **Um ins bash von mySQL zu kommen benötigt man folgende befehle:**
 
 `1. docker exec -it [container_name] bash`
+- `-it` steht für interactive terminal, damit kann man Commands einsetzen, auch wenn der **Container läuft**.
 
 `2. mysql -u root -p`
 _________________________________________________________________________________________________________________________________
