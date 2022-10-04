@@ -3,6 +3,7 @@
 **Um ein mySQL Container zuerstellen benötigt man:**
 
 `1. docker pull mysql/mysql-server:latest`
+- `/opt/gitlab` holds application code for GitLab and its dependencies.
 
 `2. docker run --name=[container_name] -d [image_tag_name]`
 
