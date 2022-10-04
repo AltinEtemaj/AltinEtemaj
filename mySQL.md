@@ -1,3 +1,5 @@
+# Informationen wie man eine MySQL Datenbank in Docker erstellt und mit phpmyadmin visualisiert. 
+
 **Um ein mySQL Container zuerstellen benötigt man:**
 
 `1. docker pull mysql/mysql-server:latest`
