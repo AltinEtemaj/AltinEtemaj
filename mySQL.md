@@ -3,13 +3,17 @@
 **Um ein mySQL Container zuerstellen benötigt man:**
 
 `1. docker pull mysql/mysql-server:latest`
-- `/opt/gitlab` holds application code for GitLab and its dependencies.
+- `:latest` sagt aus das man die letzte Version pullen möchte.
 
 `2. docker run --name=[container_name] -d [image_tag_name]`
+- `-d` steht für das image auf dem Container, der im hintergrund agiert.
 
-`3. docker logs mysql-container 2>&1 | grep GENERATED` // Um das generierte Passwort herauszufinden.
+`3. docker logs mysql-container 2>&1 | grep GENERATED`  
+- `logs` sagt die Information aus die der Container hat.
+- Um das generierte Passwort herauszufinden kann man mit dem befehl ´grep´ das Passwort entnehmen.
 
-4. mysql> (`ALTER USER 'root'@'localhost' IDENTIFIED BY '[newpassword]';`) // Muss in mysql verzeichnis rein geschrieben werden.
+4. mysql> (`ALTER USER 'root'@'localhost' IDENTIFIED BY '[newpassword]';`) Muss in mysql verzeichnis rein geschrieben werden.
+- `ALTER USER` lässt veränderungen an mySQL accounts zu 
 _________________________________________________________________________________________________________________________________
 **Um phpmyadmin einzurichten benutzt man:**
 
@@ -34,3 +38,4 @@ ________________________________________________________________________________
 `2. update mysql.user set host='%' where user='root' and host = 'localhost';`
 
 `3. flush privileges;`
+- Aktualisiert(Spült) die Privilegien des Users.
