@@ -1,5 +1,6 @@
 **Um ein mySQL Container zuerstellen benötigt man:**
 `1. docker pull mysql/mysql-server:latest`
+
 `2. docker run --name=[container_name] -d [image_tag_name]`
 `3. docker logs mysql-container 2>&1 | grep GENERATED` // Um das generierte Passwort herauszufinden.
 4. mysql> (`ALTER USER 'root'@'localhost' IDENTIFIED BY '[newpassword]';`) // Muss in mysql verzeichnis rein geschrieben werden.
