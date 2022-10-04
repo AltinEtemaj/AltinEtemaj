@@ -19,3 +19,5 @@ ________________________________________________________________________________
 1. docker exec -it mysql1 mysql -u root -p
 2. update mysql.user set host='%' where user='root' and host = 'localhost';
 3. flush privileges;
+
+`cecec`
