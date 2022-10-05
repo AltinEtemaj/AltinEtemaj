@@ -5,7 +5,7 @@
 `1. docker pull mysql/mysql-server:latest`
 - `:latest` sagt aus das man die letzte Version pullen möchte.
 
-`2. docker run --name=[container_name] -d [image_tag_name]`
+`2. docker run --name=[mysql container_name] -d [image_tag_name]`
 - `-d` steht für das image auf dem Container, der im hintergrund agiert.
 
 `3. docker logs mysql-container 2>&1 | grep GENERATED`  
@@ -26,7 +26,7 @@ ________________________________________________________________________________
 _________________________________________________________________________________________________________________________________
 **Um ins bash von mySQL zu kommen benötigt man folgende befehle:**
 
-`1. docker exec -it [container_name] bash`
+`1. docker exec -it [mysql container_name] bash`
 - `-it` steht für interactive terminal, damit kann man Commands einsetzen, auch wenn der **Container läuft**.
 - `bash` ist das System um mysql befehle auszuführen.
 
@@ -45,7 +45,7 @@ ________________________________________________________________________________
 _________________________________________________________________________________________________________________________________
 **Um Access bei mysql/phpmyadmin zu haben benutzt man:**
 
-`1. docker exec -it [container_name] mysql -u root -p`
+`1. docker exec -it [mysql container_name] mysql -u root -p`
 
 `2. update mysql.user set host='%' where user='root' and host = 'localhost';`
 - `host='%'` sagt aus das jeder beliebige sich anmelden kann.
