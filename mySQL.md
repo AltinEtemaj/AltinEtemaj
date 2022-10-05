@@ -45,7 +45,7 @@ ________________________________________________________________________________
 _________________________________________________________________________________________________________________________________
 **Um Access bei mysql/phpmyadmin zu haben benutzt man:**
 
-`1. docker exec -it mysql1 mysql -u root -p`
+`1. docker exec -it [container_name] mysql -u root -p`
 
 `2. update mysql.user set host='%' where user='root' and host = 'localhost';`
 - `host='%'` sagt aus das jeder beliebige sich anmelden kann.
